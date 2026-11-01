@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-navy-950: #0b1b3a;
+  --color-navy-900: #0f2552;
+  --color-navy-800: #15336d;
+  --color-brand-50: #eff5ff;
+  --color-brand-100: #dbe8ff;
+  --color-brand-200: #bdd4ff;
+  --color-brand-500: #2f6fe4;
+  --color-brand-600: #1f5bd0;
+  --color-brand-700: #1948a8;
+  --color-ink: #0f172a;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+:root {
+  --background: #f6f8fc;
+  --foreground: #0f172a;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* A4 / Letter "sheet" used by the paper preview */
+.paper-sheet {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 1px 3px rgb(15 23 42 / 0.15), 0 8px 24px rgb(15 23 42 / 0.08);
+}
+.page-break-marker {
+  border-top: 2px dashed #94a3b8;
+}
